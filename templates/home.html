@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My blog!</title>
+    <style>body{
+        background-color:black;
+        color: rgb(218, 54, 13);
+    }
+    li{
+        background-color: rgb(15, 219, 32);
+        color: blueviolet;
+    }
+    </style>
+</head>
+<body>
+    <h1>This is my website, what a beautiful site, isn't it beautiful?</h1>
+    
+<ul>
+    {%for item in posts%}
+    <li><a href="/posts/{{item[0]}}">{{item[1]}} </a></li>
+    {%endfor%}
+
+</ul>
+</body>
+</html>
